@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .span2 {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <p id="para"></p>
+    <div id="divelement">
+    <span class="span">
+    <img src="pic.jpg" alt="Picture">
+    <h1>ANISHA KUMARI</h1>
+    </span>
+    <p>My name is ANISHA KUMARI ,I am from Lucknow,UttarPradesh.Currently I am pursuing Bachelor's degree in Computer Science and Engineering from Lovely Professional University. I am a curious and optimistic person who loves to explore new ideas and technologies.</p>
+    <span class="span2">
+    <p><strong>Contact Me: 6394884914</strong></p>
+    <p><strong>Email: anishakumari@example.com</strong></p>  
+    <p><strong>LinkedIn: linkedin.com/in/anishakumari</strong></p>
+    </span>
+    </div>
+    <button class="btn">FOLLOW</button>
+    <script>
+        const img = document.getElementsByTagName("img")[0];
+        img.style.width = "100px";
+        img.style.height = "100px";
+        img.style.borderRadius = "10px";
+        const body1 = document.body;
+        body1.style.fontFamily = "Arial, sans-serif";
+        body1.style.backgroundColor = "lightgray";
+        const divelement = document.getElementById("divelement");
+        divelement.style.backgroundColor = "white";
+        divelement.style.padding = "20px";
+        divelement.style.border = "2px solid black";
+        divelement.style.borderRadius = "10px";
+        const btn=document.getElementsByClassName("btn")[0];
+        btn.style.fontSize="16px";
+        btn.style.fontWeight="bold";
+        btn.style.boxShadow="2px 2px 5px grey";
+        btn.onmouseover=function(){
+            btn.style.backgroundColor="#45a049";
+        }
+        btn.onmouseout=function(){
+            btn.style.backgroundColor="#4CAF50";
+        }
+        
+    </script>
+</body>
+</html>

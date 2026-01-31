@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragraph"></p>
+    <script>
+        // sayHello();
+        // function sayHello() {
+        //     console.log("Hello");
+        //     }
+        //     sayHi();
+        //     var sayHi = function () {
+        //     console.log("Hi");
+        // };
+        const para = document.getElementById("paragraph");
+        para.innerHTML+=`Hello will be printed<br>Hi will cause an error because sayHi is not a function declaration at the time of call<br><br>`;
+        para.style.fontSize = "20px";
+        para.style.fontFamily = "Arial, sans-serif";
+        para.style.display = "flex";
+        para.style.justifyContent = "center";
+        para.style.alignItems = "center";
+        para.style.color = "black";
+        para.style.backgroundColor = "lightgrey";
+        para.style.padding = "15px";
+        para.style.border = "3px solid black";
+    </script>
+</body>
+</html>

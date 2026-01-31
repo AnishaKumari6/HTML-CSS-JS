@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragraph"></p>
+    <script>
+        const users = [
+    { id: 1, name: "Alice", isActive: true, membership: "premium" },
+    { id: 2, name: "Bob", isActive: false, membership: "premium" },
+    { id: 3, name: "Charlie", isActive: true, membership: "basic" },
+    { id: 4, name: "David", isActive: true, membership: "premium" },
+    { id: 5, name: "Eve", isActive: false, membership: "basic" }
+    ];
+    const arr=users.filter(user => user.isActive && user.membership === "premium");
+    const para = document.getElementById("paragraph");
+    para.innerHTML="<strong>  Active Premium Users:  </strong><br><br>";
+    arr.forEach(user => {
+        para.innerHTML += ` ID: ${user.id}  , Name: ${user.name}  , isActive: ${user.isActive},  membership: ${user.membership}<br><br> `;
+    });
+    para.style.fontSize = "16px";
+    para.style.fontFamily = "Arial, sans-serif";
+    para.style.color = "white";
+    para.style.backgroundColor = "blue";
+    para.style.padding = "15px";
+    para.style.border = "3px solid black";
+    para.textAlign = "center";
+    para.style.width = "900px";
+    para.display="flex";
+    para.justifyContent="center";
+    para.alignItems="center";
+    </script>
+</body>
+</html>

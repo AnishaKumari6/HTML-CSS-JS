@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragraph"></p>
+    <script>
+        const shoppingCart = [
+    { itemName: "Wireless Mouse", itemPrice: 25 },
+    { itemName: "Gaming Monitor", itemPrice: 300 },
+    { itemName: "USB-C Cable", itemPrice: 15 },
+    { itemName: "Mechanical Keyboard", itemPrice: 120 },
+    { itemName: "Webcam", itemPrice: 85 }
+    ];
+    const sort=shoppingCart.sort((a,b)=>a.itemPrice - b.itemPrice);
+    const para = document.getElementById("paragraph");
+    para.innerHTML="<strong>Sorted Shopping Cart by Price (Ascending):</strong><br>";
+    sort.forEach(item => {
+        para.innerHTML += `${item.itemName}  - ${item.itemPrice}<br><br>`;
+    });
+    para.style.fontSize = "10px";
+    para.style.fontFamily = "Arial, sans-serif";
+    para.style.color = "";
+    para.style.backgroundColor = "cyan";
+    para.style.padding = "15px";
+    para.style.border = "3px solid black";
+    para.textAlign = "center";
+    </script>
+</body>
+</html>

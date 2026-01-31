@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+</head>
+<body>
+
+<p id="paragraph"></p>
+
+<script>
+    const arr = [2, 3, 4, 5, 6];
+    const para = document.getElementById("paragraph");
+    let output = "Original Array: " + arr.join(", ") + "<br>";
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            arr[i] = arr[i] * 2;
+        }
+    }
+    output +="<strong>Modified Array:</strong>" +arr.join(", ");
+    para.innerHTML = output;
+    para.style.fontSize = "24px";
+    para.style.fontFamily = "Arial, sans-serif";
+    para.style.color = "#333";
+    para.style.backgroundColor = "#f9f9f9";
+    para.style.padding = "15px";
+    para.style.border = "2px solid #ccc";
+    const body = document.body;
+    body.style.display = "flex";
+    body.style.justifyContent = "center";
+    body.style.alignItems = "center";
+    body.style.height = "100vh";
+    body.style.backgroundColor = "cyan";  
+     
+
+</script>
+
+</body>
+</html>
